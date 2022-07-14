@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hello_dart/answer.dart';
-import 'package:hello_dart/question.dart';
 import 'package:hello_dart/quiz.dart';
 import 'package:hello_dart/result.dart';
 
@@ -73,7 +71,7 @@ class _MyAppState extends State<MyApp> {
       if (_questionIndex < _questions.length) {
         print("We have more questions!");
       } else {
-        print("No more questions");
+        print("No more question");
       }
     });
     print(_questionIndex);
@@ -85,7 +83,7 @@ class _MyAppState extends State<MyApp> {
 
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('My Firsl App')),
+        appBar: AppBar(title: Text('Quize application')),
         body: _questionIndex < _questions.length
             ? Quiz(
                 questions: _questions,
